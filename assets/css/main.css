@@ -1,104 +1,92 @@
-/* Body Styles */
-body {
-    background-color: #1a1a1a;
-    color: #d2c9a5;
-    font-family: "Share Tech Mono", monospace;
-    font-size: 12px;
+/* Basic reset */
+* {
     margin: 0;
     padding: 0;
-    /* Optional background for the body (if needed, you can uncomment the lines below) */
-    /* background-image: url('assets/images/scschains.png'); */
-    /* background-size: cover; */
-    /* background-position: center; */
+    box-sizing: border-box;
 }
 
-/* Header Section */
+/* Global Styles */
+body {
+    background-color: #111;
+    color: #d2c9a5;
+    font-family: "Press Start 2P", cursive;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* Header Styles */
 header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #2e2e2e;
-    padding: 1rem;
+    background-color: #222;
+    padding: 20px;
 }
 
-header img {
-    width: 120px; /* Adjust logo size */
+header .logo {
+    width: 80px;
     height: auto;
-    margin-right: 1rem; /* Space between logo and text */
+    display: block;
+    margin: 0 auto 10px;
 }
 
 header h1 {
-    color: #e1d8b5;
+    color: #ffcc00;
     text-shadow: 2px 2px #000;
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
-/* Navigation */
+/* Navigation Styles */
 nav {
-    background-color: #222;
-    border-top: 1px solid #444;
-    border-bottom: 1px solid #444;
-    padding: 0.5rem;
-    text-align: center;
-}
-
-nav a {
-    color: #bfb68e;
-    margin: 0 1rem;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    border: 2px solid #444;
-    background-color: #1c1c1c;
-    display: inline-block;
-    box-shadow:
-        inset -2px -2px 0 #111,
-        inset 2px 2px 0 #333;
-}
-
-nav a:hover {
     background-color: #333;
+    padding: 10px;
 }
 
-/* Main Content Area */
-.container {
-    max-width: 800px; /* Limits the container width */
-    margin: 0 auto; /* Centers it horizontally */
-    padding: 2rem;
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
 }
 
-/* Article Style */
-article {
-    margin-bottom: 3rem;
-    padding: 1rem;
-    border: 4px double #888;
-    background-color: #202020;
-    box-shadow: 0 0 10px #111;
-    background-image: url("assets/images/scschains.png"); /* Add your image */
-    background-size: cover; /* Ensures it scales with screen size */
-    background-position: center; /* Centers the background image */
-    background-repeat: no-repeat;
-    background-attachment: fixed; /* Keeps it in place when scrolling */
+nav ul li {
+    margin: 0 15px;
 }
 
-/* Article Headings */
-article h2 {
-    margin-top: 0;
-    color: #f0eac0;
-    font-size: 1.5rem;
-    font-family: "Press Start 2P", cursive;
-}
-
-/* Optional: More custom styles for the footer or other elements can be added */
-footer {
-    background-color: #2e2e2e;
-    color: #d2c9a5;
-    padding: 1rem;
-    text-align: center;
-}
-footer a {
+nav ul li a {
     color: #bfb68e;
     text-decoration: none;
+    font-size: 1rem;
 }
-footer a:hover {
-    color: #f0eac0;
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Content Container */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #222;
+    color: #d2c9a5;
+    padding: 10px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* Button Style */
+.btn {
+    background-color: #ffcc00;
+    color: #111;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #ffaa00;
 }

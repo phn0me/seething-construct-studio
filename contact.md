@@ -5,10 +5,6 @@ title: Contact
 
 # Contact Us
 
-For inquiries, collaborations, or general questions, feel free to reach out:
+We’d love to hear from you! For inquiries, collaborations, or just to say hello, reach out via email:
 
-- Email: your-email@example.com
-- Twitter: [@SeethingStudio](https://twitter.com/SeethingStudio)
-- Discord: Join our community on Discord!
-
-We look forward to hearing from you.
+[Email Us](mailto:noreply@scstudio.dev)
