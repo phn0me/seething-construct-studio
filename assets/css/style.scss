@@ -1,3 +1,7 @@
+---
+---
+
+@import "{{ site.theme }}";
 /* Basic reset */
 * {
     margin: 0;
@@ -32,13 +36,13 @@ header .logo {
 }
 
 header h1 {
-    color: #ffcc00;
+    color: #d2c9a5;
     text-shadow: 2px 2px #000;
     font-size: 2rem;
     margin: 0;
 }
 header h1 a:visited {
-    color: #ffcc00; /* Same color for both states */
+    color: #d2c9a5; /* Same color for both states */
     text-decoration: none;
     pointer-events: auto; /* Keeps it clickable */
 }
