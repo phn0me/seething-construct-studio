@@ -8,9 +8,8 @@
             content="{{ page.description | default: site.description }}"
         />
         <title>{{ page.title | default: site.title }}</title>
-        <!-- Load Pixelated Font -->
         <link
-            href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
             rel="stylesheet"
         />
         <link
@@ -20,24 +19,23 @@
     </head>
     <body>
         <header>
+            <!-- You can either show the logo here or use a different placement if desired -->
             <img
                 src="{{ '/assets/images/logo.png' | relative_url }}"
                 alt="Logo"
                 class="logo"
             />
-            <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+            <h1>{{ site.title }}</h1>
+            <nav>
+                <a href="{{ '/' | relative_url }}">Home</a>
+                <a href="{{ '/about' | relative_url }}">About</a>
+                <a href="{{ '/blog' | relative_url }}">Blog</a>
+                <a href="{{ '/contact' | relative_url }}">Contact</a>
+            </nav>
         </header>
-        <nav>
-            <ul>
-                <li><a href="{{ '/' | relative_url }}">Home</a></li>
-                <li><a href="{{ '/about' | relative_url }}">About</a></li>
-                <li><a href="{{ '/devlog' | relative_url }}">Dev Log</a></li>
-                <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
-            </ul>
-        </nav>
-        <main class="container">{{ content }}</main>
+        <div class="container">{{ content }}</div>
         <footer>
-            <p>&copy; 2025 Seething Construct Studio. All rights reserved.</p>
+            <p>&copy; 2025 {{ site.title }}. All rights reserved.</p>
         </footer>
     </body>
 </html>

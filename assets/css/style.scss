@@ -2,104 +2,129 @@
 ---
 
 @import "{{ site.theme }}";
-/* Basic reset */
+/* ----------------------------------------------
+   Reset & Global Styles
+---------------------------------------------- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Global Styles */
 body {
-    background-color: #111;
-    color: #d2c9a5;
-    font-family: "Press Start 2P", cursive;
-    font-size: 12px;
-    line-height: 1.5;
-    text-align: center;
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
 }
 
-/* Header Styles */
+/* ----------------------------------------------
+   Header: Fixed Top Navigation
+---------------------------------------------- */
 header {
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
-    justify-content: center;
-    background-color: #222;
+    background-color: #1e1e1e;
     padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid #333;
 }
 
 header .logo {
-    width: 80px;
-    height: auto;
-    margin-bottom: 10px; /* Space between logo and text */
+    max-width: 150px;
+    margin-bottom: 10px;
 }
 
 header h1 {
-    color: #d2c9a5;
-    text-shadow: 2px 2px #000;
     font-size: 2rem;
-    margin: 0;
+    margin: 10px 0;
+    color: #e0e0e0;
 }
-header h1 a:visited {
-    color: #d2c9a5; /* Same color for both states */
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: #e0e0e0;
     text-decoration: none;
-    pointer-events: auto; /* Keeps it clickable */
-}
-
-/* Navigation Styles */
-nav {
-    background-color: #333;
-    padding: 10px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
     margin: 0 15px;
-}
-
-nav ul li a {
-    color: #bfb68e;
-    text-decoration: none;
     font-size: 1rem;
+    transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: #ffcc00;
+header nav a:hover {
+    color: #f39c12;
 }
 
-/* Content Container */
+/* ----------------------------------------------
+   Main Content Area
+---------------------------------------------- */
 .container {
-    max-width: 800px;
-    margin: 20px auto;
+    max-width: 960px;
+    margin: 100px auto 50px; /* top margin accounts for the fixed header */
     padding: 20px;
 }
 
-/* Footer Styles */
-footer {
-    background-color: #222;
-    color: #d2c9a5;
-    padding: 10px;
-    font-size: 0.9rem;
-    text-align: center;
+/* ----------------------------------------------
+   Sections & Headings
+---------------------------------------------- */
+section {
+    margin-bottom: 40px;
 }
 
-/* Button Style */
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+/* ----------------------------------------------
+   Footer
+---------------------------------------------- */
+footer {
+    background-color: #1e1e1e;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #999;
+}
+
+/* ----------------------------------------------
+   Links & Buttons
+---------------------------------------------- */
+a {
+    color: #f39c12;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #e67e22;
+}
+
 .btn {
-    background-color: #ffcc00;
-    color: #111;
+    display: inline-block;
+    background-color: #f39c12;
+    color: #121212;
     padding: 10px 20px;
     text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 20px;
+    border-radius: 3px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #ffaa00;
+    background-color: #e67e22;
+}
+
+/* ----------------------------------------------
+   Utility Classes
+---------------------------------------------- */
+.text-center {
+    text-align: center;
 }

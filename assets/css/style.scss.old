@@ -1,0 +1,105 @@
+---
+---
+
+@import "{{ site.theme }}";
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    background-color: #111;
+    color: #d2c9a5;
+    font-family: "Press Start 2P", cursive;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center;
+    background-color: #222;
+    padding: 20px;
+}
+
+header .logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px; /* Space between logo and text */
+}
+
+header h1 {
+    color: #d2c9a5;
+    text-shadow: 2px 2px #000;
+    font-size: 2rem;
+    margin: 0;
+}
+header h1 a:visited {
+    color: #d2c9a5; /* Same color for both states */
+    text-decoration: none;
+    pointer-events: auto; /* Keeps it clickable */
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #bfb68e;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Content Container */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #222;
+    color: #d2c9a5;
+    padding: 10px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* Button Style */
+.btn {
+    background-color: #ffcc00;
+    color: #111;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #ffaa00;
+}
