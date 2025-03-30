@@ -1,14 +1,30 @@
 ---
 layout: default
-title: Welcome to Seething Construct Studio
+title: Seething Construct Studio
 ---
 
-# Welcome to Seething Construct Studio
+# Seething Construct Studio
 
-We are an indie game studio specializing in dark, gritty, and arcane 2D top-down games.
+Welcome to Seething Construct Studio. We craft dark, gritty, and immersive 2D top-down games with arcane themes. Our current project, *Smith's Awakening*, invites players to restore the lost power of a corrupted golem, Sinth. Join us as we create worlds where every choice matters and every item holds power.
 
-Our current project, *Smith's Awakening*, immerses you in a world where you are the caretaker of Sinth, a golem corrupted by an unknown force. Venture into biomes, cleanse corrupted constructs, and restore the power of the golem as you craft weapons and equip heroes to fight against the forces of evil.
+## Our Latest Project
 
-Stay tuned for updates on our upcoming games!
+![Sinth Golem](assets/images/sinth.jpg)
 
-![Sinth Golem](assets/images/logo.png)
+### *Smith's Awakening*
+An action RPG where you are the caretaker of Sinth, a bound-forge construct. Explore biomes, gather resources, and craft weapons to help heroes fight back against the encroaching darkness.
+
+[Learn More →](#)
+
+## Latest News
+
+Check out our latest blog post or development update on our journey with *Smith's Awakening*.
+
+[Read Devlog →](#)
+
+---
+
+### Stay Connected
+- **Email:** your-email@example.com
+- **Twitter:** [@SeethingStudio](https://twitter.com/SeethingStudio)
+- **Discord:** Join our community!

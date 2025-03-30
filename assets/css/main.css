@@ -1,6 +1,7 @@
+/* Main Styles */
 body {
-    background-color: #2a2a2a;
-    color: #e0e0e0;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text for contrast */
     font-family: "Arial", sans-serif;
     margin: 0;
     padding: 0;
@@ -13,35 +14,87 @@ header {
 }
 
 header h1 a {
-    color: #ffcc00;
+    color: #ffcc00; /* Glowing arcane color */
     text-decoration: none;
+    font-size: 2em;
 }
 
-nav ul {
+header nav ul {
     list-style-type: none;
     padding: 0;
 }
 
-nav li {
+header nav li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
-nav a {
+header nav a {
     color: #e0e0e0;
     text-decoration: none;
 }
 
-main {
-    padding: 40px;
+header nav a:hover {
+    color: #ffcc00;
+}
+
+.hero-section {
+    background-image: url("assets/images/sinth-hero.jpg");
+    background-size: cover;
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero-section h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+
+.hero-section a {
+    background-color: #ffcc00;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: #121212;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero-section a:hover {
+    background-color: #ffaa00;
+}
+
+section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+section h3 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.2em;
 }
 
 footer {
     background-color: #1a1a1a;
     color: #e0e0e0;
+    padding: 20px;
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffaa00;
 }
