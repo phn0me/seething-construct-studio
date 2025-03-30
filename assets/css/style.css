@@ -17,23 +17,25 @@ body {
 
 /* Header Styles */
 header {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center;
     background-color: #222;
     padding: 20px;
-    display: flex;
 }
 
 header .logo {
     width: 80px;
     height: auto;
-    display: block;
-    margin-right: auto;
+    margin-bottom: 10px; /* Space between logo and text */
 }
 
 header h1 {
     color: #ffcc00;
     text-shadow: 2px 2px #000;
     font-size: 2rem;
-    text-align: center;
+    margin: 0;
 }
 
 /* Navigation Styles */
