@@ -1,6 +1,6 @@
 title: Seething Construct Studio
 description: An indie studio creating dark, gritty, and arcane 2D top-down games.
-theme: tactile
+theme: jekyll-theme-tactile
 baseurl: ""
 url: "https://scstudio.dev"
 author:
