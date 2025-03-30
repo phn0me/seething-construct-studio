@@ -1,9 +1,5 @@
 title: Seething Construct Studio
-description: An indie studio creating dark, gritty, and arcane 2D top-down games.
-theme: minima
+description: "Indie game development studio crafting retro-inspired, pixelated games."
 baseurl: ""
 url: "https://scstudio.dev"
-author:
-  name: Seething Construct Studio
-  email: noreply@scstudio.dev
-  url: https://scstudio.dev
+markdown: kramdown
